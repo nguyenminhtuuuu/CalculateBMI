@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="206.0" prefWidth="533.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nmt.bmiapp.PrimaryController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="173.199951171875" minWidth="10.0" prefWidth="62.000003814697266" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="367.599951171875" minWidth="10.0" prefWidth="367.599951171875" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.20001220703125" minWidth="10.0" prefWidth="78.800048828125" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="85.59999389648438" minHeight="10.0" prefHeight="53.99999389648437" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="105.39998321533201" minHeight="8.600012207031256" prefHeight="55.00000000000001" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="155.40001373291017" minHeight="10.0" prefHeight="57.400000000000006" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="191.19997558593752" minHeight="0.0" prefHeight="54.400000000000006" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="197.4000244140625" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Weight" GridPane.rowIndex="1" />
+      <Label text="Height" GridPane.rowIndex="2" />
+      <TextField fx:id="txtWeight" promptText="Weight (kg)" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="txtHeight" promptText="Height (m)" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button mnemonicParsing="false" onAction="#bmiHandler" styleClass="Btn" text="BMI" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+      <Label text="(kg)" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Label text="(m)" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Label fx:id="lblResult" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Subject" text="BMI APP" GridPane.columnSpan="3" GridPane.halignment="CENTER" />
+   </children>
+</GridPane>
